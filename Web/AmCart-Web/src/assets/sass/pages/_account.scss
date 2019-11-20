@@ -1,0 +1,43 @@
+
+/*===========================================================================*\
+|  account
+\*===========================================================================*/ 
+
+.personal-detail
+{
+	margin-top: -18px;
+	margin-bottom: 60px;
+	overflow: hidden;
+	h6
+	{
+		margin-top: 50px;
+		margin-bottom: 20px;
+	}
+	
+	.form-group
+	{
+		margin-bottom: 11px;
+		.hasCustomSelect
+		{
+			margin-top: 6px;
+		}
+	}
+
+	.btn
+	{
+		margin-top: 10px;
+	}
+}
+
+label.type-text
+{
+	width: 100%;
+	margin: 0;
+	font: 13px $primary-font-family;
+	color: $primary-text-color;
+
+	input
+	{
+		margin-top: 10px;
+	}
+}

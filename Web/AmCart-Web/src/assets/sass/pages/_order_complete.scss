@@ -1,0 +1,74 @@
+
+/*===========================================================================*\
+|  Order Complete
+\*===========================================================================*/ 
+
+.thank-you
+{
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+
+.left-arrow-btn
+{
+	position: relative;
+	&:before 
+	{ 
+		line-height: 32px; 
+		font-family: Arial; 
+		content: "→"; 
+		font-size: 25px; 
+		color: $primary-link-hover-color; 
+		display: inline-block; 
+		float: left; 
+		//padding-left: 30px; 
+		transition: all .2s ease 0; 
+		@include rotate(180deg);
+	}
+	&:hover
+	{
+		&:before
+		{
+			color: #fff;
+		}
+	}
+}
+
+.contact-info
+{
+	width: 235px;
+	float: right;
+	@media all and (max-width: $screen-sm-max) {
+		float: none;
+		margin: 0 auto 40px auto;
+	}
+	p
+	{
+		margin-bottom: 5px;
+		span
+		{
+			color: $primary-text-color;
+		}
+	}
+
+	h6
+	{
+		font-size: 16px;
+		margin-top: 0;
+		span
+		{
+			color: #9198a1;
+			margin-right: 10px;
+			font-size: 20px;
+		}
+	}
+
+	.hr
+	{
+		display: block;
+		height: 0;
+		border-bottom: 1px solid #e1e3e6;
+		margin-bottom: 20px;
+		margin-top: 15px;
+	}
+}

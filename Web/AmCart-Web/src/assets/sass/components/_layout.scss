@@ -1,0 +1,40 @@
+
+/*===========================================================================*\
+|  Layout settings
+\*===========================================================================*/ 
+
+/*.row{margin:0;}*/
+.gap-10{margin-top:10px;}
+.gap-15{margin-top:15px;}
+.gap-20{margin-top:20px;}
+.gap-25{margin-top:25px;}
+.gap-30{margin-top:30px;}
+.gap-50{margin-top:50px;}
+.gap-60{margin-top:60px;}
+.gap-70{margin-top:70px;}
+.gap-80{margin-top:80px;}
+.valign{display:table; width:100%;}
+.valign > div{display:table-cell; vertical-align:middle;}
+.no-gutter.row{margin:0;}
+.no-gutter > [class^="col-"] {padding-left:0; padding-right:0;}
+
+.container {
+   @media (max-width: $screen-sm-max){ padding: 0 15px; }
+}
+
+.boxed-layout{
+   margin: 0 auto;
+   background-color: white;
+   -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.32);
+   -moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.32);
+   box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.32);
+   @media (min-width: $screen-sm-min) {
+      width: $container-sm;
+   }
+   @media (min-width: $screen-md-min) {
+      width: $container-md;
+   }
+   @media (min-width: $screen-lg-min) {
+      width: $container-lg;
+   }
+}

@@ -1,0 +1,180 @@
+
+/*===========================================================================*\
+|  Review
+\*===========================================================================*/ 
+
+.comment
+{
+	padding-top: 40px;
+	padding-bottom: 34px;
+	border-bottom: 1px solid $primary-border-color;
+
+	.img-cover
+	{
+		width: 100px;
+		height: 98px;
+		float: left;
+		margin-top: 6px;
+		@media all and (max-width: 768px) {
+			width: 100%;
+			float: none;
+			margin-bottom: 20px;
+		}
+	}
+	.data
+	{
+		@media all and (max-width: 768px) {
+			margin-left: 0;
+		}
+
+		margin-left: 120px;
+		> p
+		{
+			margin-bottom: 0;
+		}
+
+		time
+		{
+			font: 14px $primary-font-family;
+			color: #a1a8b2;
+			display: inline-block;
+		}
+		&:before,&:after
+		{
+			content: "";
+			display: block;
+			clear: right;
+		}
+
+	}
+	.comment-info
+	{
+		float: left;
+	}
+	.name
+	{
+		font: 14px $primary-font-family;
+		color: $primary-text-color;
+		display: inline-block;
+		margin-right: 18px;
+	}
+
+	.like-wrapper
+	{
+		float: right;
+		text-align: right;
+		margin-top: -5px;
+		@media all and (max-width: 768px) {
+			float: left;
+			text-align: left;
+			padding: 0;
+		}
+	}
+	.count
+	{
+		color: $primary-link-hover-color;
+		font-size: 16px;
+		margin-left: 5px;
+		&:before
+		{
+			content: "(";
+		}
+		&:after
+		{
+			content: ")";
+		}
+	}
+
+	.dislike
+	{
+		margin-left: 15px;
+	}
+
+	.stars-rating
+	{
+		display: block;
+		margin-bottom: 7px;
+		margin-top: 3px;
+	}
+
+	.reply
+	{
+		font-size: 14px;
+		position: relative;
+		left: 15px;
+		top: 5px;
+		@media all and (max-width: $screen-sm-max) {
+			left: 0;
+		}
+		span
+		{
+			vertical-align: -2px;
+		}
+	}
+
+	.comment-text
+	{
+		margin-top: 3px;
+		font: 13px/1.6em $primary-font-family;
+		letter-spacing: 0.01em;
+		color: #9198a1;
+		float: left;
+		display: inline-block;
+	}
+
+	&.second-lvl
+	{
+		padding-left: 40px;
+	}
+}
+
+.wp-pagenavi
+{
+	margin-top: 25px;
+	margin-bottom: 80px;
+	float: left;
+	.current
+	{
+		cursor: default;
+	}
+
+	.btn
+	{
+		padding: 0;
+		margin-right: 6px;
+		font-size: 15px;
+		line-height: 22px;
+		vertical-align: middle;
+		height: 25px;
+		width: 25px;
+		text-align: center;
+		text-transform: uppercase;
+		position: relative;
+		&:before
+		{
+			position: absolute;
+			top: 50%;
+			left: 45%;
+			@include translate(-50%,-50%);
+		}
+
+		&:last-child
+		{
+			margin-right: 0;
+		}
+	}
+}
+
+.by
+{
+	margin-top: 28px;
+	font: 14px $primary-font-family;
+	a
+	{
+		color: $primary-link-hover-color;
+		&:hover
+		{
+			color: $primary-link-color
+		}
+	}
+}

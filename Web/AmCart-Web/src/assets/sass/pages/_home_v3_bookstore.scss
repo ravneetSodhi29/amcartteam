@@ -1,0 +1,231 @@
+
+/*===========================================================================*\
+|  Home v.3 bookstore
+\*===========================================================================*/ 
+
+body.home-v3
+{
+
+	header
+	{
+		#top-bar
+		{
+			.left-top-bar
+			{
+				li a.active
+				{
+					color: $home3-primary-color;
+				}
+			}
+		}
+
+		#header-bar
+		{
+			#shopping-cart-wrapper
+			{
+				.s-bag-1
+				{
+					background: $home3-primary-color;
+				}
+
+				.active.dd-products-price
+				{
+					color: $home3-primary-color;
+				}
+			}
+
+			#header-logo
+			{
+				.top-tag-line
+				{
+					border-left: 1px solid lightgray;
+				    display: inline;
+				    font-style: italic;
+				    margin-left: 15px;
+				    margin-top: -81px;
+				    padding: 5px 10px;
+				    vertical-align: bottom;
+				}
+			}
+		}
+
+		.top-menu
+		{
+			.main-menu
+			{
+				ul.nav-menu > li > a
+				{
+					color: #fff;
+				}
+			}
+		}
+	}
+
+
+	.pg-body
+	{
+		.store-alt-products
+		{
+			.news-container .news-item
+			{
+				margin-bottom: 30px;
+
+				figure figcaption
+				{
+					.pl-button:hover
+					{
+						background: $home3-primary-color;
+					}
+				}
+
+			}
+		}
+
+		.store-alt
+		{
+			.news-container .news-item
+			{
+				.ni-title-line
+				{
+					border-color : $home3-primary-color;
+				}
+			}
+		}
+
+		.carousel.slide
+		{
+			li
+			{
+				border-color: $home3-primary-color;
+			}
+
+			li.active
+			{
+				background: $home3-primary-color;
+				border-color: $home3-primary-color;
+			}
+		}
+
+
+		.btn.news-loadmore
+		{
+			.icon-reload
+			{
+				color: $home3-primary-color;
+			}
+		}
+
+
+
+		.cat-sidebar
+		{
+			.twitter-box
+			{
+				.tweets-group
+				{
+					li > p > a
+					{
+						color: $home3-primary-color;
+					}
+				}
+			}
+
+			.bx-has-controls-direction
+			{
+				.bx-controls-direction
+				{
+					a:hover
+					{
+						color: $home3-primary-color;
+					}
+				}
+			}
+
+			.wg-specials .vertical-bx-1
+			{
+				li
+				{
+					figure
+					{
+						height: 250px;
+						border: none;
+					}
+
+					p.wgsp-price
+					{
+						color: $home3-primary-color;
+					}
+
+					border : 1px solid #ebebeb;
+				}
+			}
+
+			.wg-viwed-products
+			{
+				p.wgvp-item-price
+				{
+					color: $home3-primary-color;
+				}
+			}
+		}
+
+		.subscribe
+		{
+			form
+			{
+				input[type="submit"]
+				{
+					background: $home3-primary-color;
+				}
+			}
+		}
+
+	}
+
+
+	footer
+	{
+		.product-tags-box
+		{
+			.tags a
+			{
+				background: $home3-primary-color;
+			}
+		}
+
+		#social-buttons
+		{
+			.facebook a
+			{
+				background: #064ca1;
+			}
+
+			.tweeter a
+			{
+				background: #27b9f2;
+			}
+
+			.gplus a
+			{
+				background: #da4735;
+			}
+
+			.youtube a
+			{
+				background: #e52d27;
+			}
+
+			.instantgram a
+			{
+				background: #306a92;
+			}
+
+			.skype a
+			{
+				background: #12a5f4;
+			}
+
+		}
+	}
+
+}

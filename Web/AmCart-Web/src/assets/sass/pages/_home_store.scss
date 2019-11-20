@@ -1,0 +1,267 @@
+
+/*===========================================================================*\
+|	Home - Store
+\*===========================================================================*/ 
+
+.wg-categories.store-alt
+{
+	border-bottom: none;
+	padding-bottom: 10px;
+}
+
+.wg-title.store-alt
+{
+	position: relative;
+	padding-bottom: 17px;
+	&:before
+	{
+		content: "";
+		display: block;
+		width: 90px;
+		height: 2px;
+		background-color: #0c0c0c;
+		position: absolute;
+		bottom: 0;
+	}
+}
+
+.wg-categories.store-alt
+{
+	h5
+	{	
+		font-size: 15px;
+		text-align: left;
+		margin-bottom: 2px;
+	}
+	.wg-categories-list
+	{
+		padding-left: 0;
+		list-style: none;
+
+		li
+		{
+			line-height: 26px;
+		}
+	}
+}
+
+.wg-viwed-products.box-with-pager.store-alt
+{
+	padding-top: 13px;
+	margin-bottom: 35px;
+	&.bx-controls
+	{
+		top: 0;
+	}
+
+	.wgvp-item
+	{
+		margin-bottom: 4px;
+		figure
+		{
+			background-color: #ebebeb;
+			img
+			{
+				vertical-align: middle;
+			}
+		}
+	}
+}
+
+.wg-tweets
+{
+	.top-box-btn-1
+	{
+		top: 0;
+	}
+
+	.tweets-group
+	{
+		li
+		{
+			margin-bottom: 25px;
+			.reply
+			{
+				float: right;
+				color: #a5adb8;
+				&:hover
+				{
+					color: $primary-link-hover-color;
+				}
+				span
+				{
+					vertical-align: -2px;
+				}
+			}
+		}
+	}
+}
+
+.wg-brands
+{
+	.brands-list .bl-item
+	{
+		width: 50%;
+	}
+
+	.box-with-pager .bx-controls
+	{
+		top: 0;
+		@media all and (max-width: $screen-sm-max) {
+			top: 40px;
+		}
+	}
+}
+
+.back-line
+{
+	text-align: center;
+	margin-bottom: 25px;
+	vertical-align: middle;
+	h2
+	{
+		margin: 0;
+		padding: 0 20px;
+		background-color: #fff;
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 18px;
+		line-height: 18px;
+	}
+	position: relative;
+
+	&:after
+	{
+		content: "";
+		display: block;
+		position: absolute;
+		z-index: -1;
+		width: 100%;
+		height: 2px;
+		background-color: #0c0c0c;
+		top: 50%;
+		left: 0;
+		@include translateY(-50%);
+	}
+}
+
+.mobile-collapse.opened .mobile-collapse-header.back-line:after,.mobile-collapse .mobile-collapse-header.back-line:after
+{
+	content: "";
+}
+
+.widget.mobile-collapse.store-alt
+{
+	@media all and (max-width: $screen-sm-max) {
+		padding-top: 0;
+		padding-bottom: 0;
+		margin-bottom: 40px;
+	}
+}
+
+.store-alt-products
+{
+	.news-item
+	{
+		margin-bottom: 0;
+	}
+
+	.news-container
+	{
+		//margin-bottom: 30px;
+	}
+}
+
+#carousel-clients-say
+{
+	.client-item
+	{
+		text-align: center;
+		padding-top: 25px;
+		> *
+		{
+			display: block;
+			width: 100%;
+			padding: 0;
+			margin: 0;
+			float: none;
+			text-align: center;
+		}
+
+		img
+		{
+			max-width: 80px;
+		}
+
+		.ci-body
+		{
+			margin-top: 12px;
+		}
+	}
+
+	.carousel-indicators
+	{
+		bottom: 20px;
+	}
+}
+
+.news-container.store-alt
+{
+	.news-item
+	{
+		.ni-body
+		{
+			padding: 15px;
+		}
+	}
+}
+
+.loadmore-wrapp
+{
+	position: absolute;
+	width: 100%;
+	bottom: 50px;
+	left: 0;
+}
+.news-loadmore.store-alt
+{
+	margin-top: 15px;
+	&:before,&:after
+	{
+
+	}
+}
+
+.relative
+{
+	position: relative;
+}
+
+.wg-specials.box-with-pager.store-alt
+{
+	.wg-title.mobile-collapse-header.store-alt
+	{
+		@media all and (min-width: $screen-md-min) {
+			padding-right: 65px;
+		}
+	}
+	.bx-controls
+	{
+		@media all and (max-width: $screen-sm-max) {
+			top: 40px;
+		}
+	}
+}
+
+.wg-banner
+{
+	#carousel-banner
+	{
+		width: 100%;
+		text-align: center;
+		img
+		{
+			display: inline-block;
+		}
+	}
+}

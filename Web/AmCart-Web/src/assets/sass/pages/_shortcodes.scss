@@ -1,0 +1,13 @@
+
+/*===========================================================================*\
+|  Shortcodes
+\*===========================================================================*/ 
+
+.quote-author{color:$secondary-background-color; font-size:13px; margin-top:10px; display:block;}
+.q-w-bg{background:$secondary-background-color; color:#fff;}
+.quote-ic{font-size:20px; float:left; width:30px; margin-right:5px; transform:rotate(180deg); -ms-transform:rotate(180deg); /* IE 9 */-webkit-transform:rotate(180deg); /* Opera, Chrome, and Safari */}
+.white{color:#fff;}
+.checked input,.checked input:focus{border:1px solid #79c257!important;}
+.checked input:before{font-size:18px;}
+.checked i{color:#79c257; font-size:17px;}
+input.required-alert,input.required-alert:focus,.required-alert textarea{border:1px solid #f54325!important; color:#f54325;}

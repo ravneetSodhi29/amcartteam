@@ -1,0 +1,625 @@
+
+/*===========================================================================*\
+|  wishlist
+\*===========================================================================*/ 
+
+.clrfix:after,.clrfix:before
+{
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+}
+
+.user-info
+{
+	border: 1px solid $primary-border-color;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	width: 100%;
+	@media all and (max-width: 768px) {
+		display: block;
+		width: 100%;
+		border: none;
+		&:after
+		{
+			content: "";
+			display: block;
+			width: 100%;
+			clear: both;
+			height: 0;
+		}
+		> thead,> tbody
+		{
+			display: block;
+			width: 100%;
+			max-width: 100%;
+			> tr
+			{
+				display: block;
+				width: 100%;
+				max-width: 100%;
+				> td,th
+				{
+					display: block;
+					width: 100% !important;
+					max-width: 100% !important;
+					border: 1px solid $primary-border-color;
+					clear: both;
+					float: left;
+					.wellcome,.last
+					{
+						border-left: none;
+					}
+					&.picture
+					{
+						border-bottom: none;
+					}
+				}
+			}
+		}
+	}
+	.picture
+	{
+		text-align: center;
+		width: 145px;
+		min-width: 145px;
+		max-width: 145px;
+		.img-cover
+		{
+			display: inline-block;
+			margin: 0;
+			margin-top: 34px;
+			width: 75px;
+		}
+		.name
+		{
+			font-size: 12px;
+			margin-top: 10px;
+			margin-bottom: 28px;
+		}
+		.change-picture
+		{
+			margin-bottom: 19px;
+			i
+			{
+				display: block;
+				text-align: center;
+			}
+
+			a
+			{
+				color: $primary-link-hover-color;
+				&:hover
+				{
+					color: $primary-link-color;
+				}
+			}
+		}
+	}
+
+	.wellcome
+	{
+		border-left: 1px solid $primary-border-color;
+		border-bottom: 1px solid $primary-border-color;
+		padding-top: 37px;
+		padding-bottom: 40px;
+		h4
+		{
+			margin-top: 0;
+			margin-bottom: 5px;
+			span
+			{
+				color: $primary-link-hover-color;
+			}
+		}
+
+		.my-orders
+		{
+			font-size: 15px;
+			font-weight: 600;
+			margin-bottom: 3px;
+		}
+		.view-cart
+		{
+			text-align: center;
+			@media all and (max-width: 768px) {
+				text-align: left;
+			}
+			.btn
+			{
+				margin-top: 3px;
+			}
+		}
+	}
+
+	.last
+	{
+		border-left: 1px solid $primary-border-color;
+		width: 100%;
+		padding-top: 20px;
+		padding-bottom: 8px;
+		p
+		{
+			span
+			{
+				color: $primary-link-hover-color;
+				margin-left: 10px;
+				&.price
+				{
+					font-size: 14px;
+					font-weight: 600;
+					color: $primary-text-color;
+				}
+			}
+		}
+	}
+}
+
+.left-menu
+{
+	min-width: 145px;
+	text-align: center;
+	margin-bottom: 40px;
+
+
+	div
+	{
+		width: 145px;
+		height: 125px;
+		background-color: #f5f5f5;
+		text-align: center;
+		font-size: 14px;
+		padding-top: 40px;
+		position: relative;
+		color: $primary-text-color;
+		@include transition(color 0.2s);
+		&:hover
+		{
+			color: $primary-link-hover-color;
+		}
+		@media all and (max-width: 992px) {
+			display: block;
+			width: 100%;
+			height: 70px;
+			padding: 10px;
+		}
+		&:not(:last-child)
+		{
+			border-bottom: 1px solid $primary-border-color;
+			@media all and (max-width: 992px) {
+				border: none;
+				border-bottom: 1px solid $primary-border-color;
+			}
+		}
+		span
+		{
+		}
+		i
+		{
+			font-size: 1.7em;
+		}
+		&.active
+		{
+			background-color: $primary-link-hover-color;
+			color: #fff;
+			&:hover
+			{
+				color: $primary-text-color;
+			}
+			&:after
+			{
+				content: "";
+				display: block;
+				position: absolute;
+				height: 0;width: 0;
+				border: 10px solid transparent;
+				border-left-color: $primary-link-hover-color;
+				right: -20px;
+				top: 50%;
+				@include translateY(-50%);
+				@media all and (max-width: 992px) {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+
+h6.account-table-head
+{
+	margin-top: 0;
+	border-bottom: 1px solid $primary-border-color;
+	padding-bottom: 10px;
+	margin-bottom: 25px;
+	text-transform: uppercase;
+}
+
+#order-detail-content
+{
+	margin-bottom: 100px;
+
+
+	.table.table-bordered
+	{
+		border-color: #ebebeb;
+	}
+
+	.table tbody > tr > td {
+	    vertical-align: top;
+	    padding-top: 20px;
+	    text-align: center;
+		position: relative;
+		&:before
+		{
+			font: 14px $secondary-font-family;
+		}
+	}
+	.table tbody > tr
+	{
+		position: relative;
+		a.close-btn.ddr
+		{
+			display: inline-block;
+			position: absolute;
+			top: 15px;
+			right: 12px;
+			margin: 0;
+			@media all and (max-width: $screen-xs-max) {
+				top: auto;
+				bottom: 20px;
+			}
+		}
+	}
+
+	.subtotal
+	{
+		padding-left: 20px;
+		padding-right: 60px;
+		text-align: left;
+		@media all and (max-width: $screen-xs-max) {
+			padding: 0;
+			p
+			{
+				text-align: center;
+			}
+		}
+		p
+		{
+		    font-size: 14px;
+		    font-family: $secondary-font-family;
+		}
+		&.no-cls-btn
+		{
+			padding-left: 0;
+			padding-right: 0;
+			text-align: center;
+			width: 120px;
+		}
+	}
+
+	.table tbody > tr > td.default
+	{
+		width: 100px;
+		span
+		{
+			font-family: $secondary-font-family;
+			font-size: 14px;
+		}
+	}
+	.table tbody > tr > td.date
+	{
+		width: 130px;
+		span
+		{
+			font-family: $secondary-font-family;
+			font-size: 14px;
+		}
+	}
+	
+	.table tbody > tr > td.cart_quantity {
+		text-align: center;
+	    width: 140px;
+	    vertical-align: top;
+	    padding-top: 20px;
+	}
+	.table tbody > tr > td.cart_quantity .cart_quantity_button {
+	    white-space: nowrap;
+	    vertical-align: middle;
+	    display: inline-block;
+	    clear: both;
+	}
+	.table tbody > tr > td.cart_quantity .cart_quantity_button a {
+	    float: left;
+	    display: block;
+	    margin: 0;
+	    height: 30px;
+	    line-height: 25px;
+	    vertical-align: middle;
+	    padding: 0;
+	    width: 30px;
+	    font-size: 20px;
+	    border: 1px solid $primary-border-color;
+	    color: #8c929b;
+	    text-align: center;
+	    &:hover
+	    {
+	    	color: $primary-text-color;
+	    }
+	    &:focus:not(:hover)
+	    {
+	    	background: none;
+	    }
+	}
+	.cart_quantity .cart_quantity_input 
+	{
+	    padding: 0;
+	    text-align: center;
+	    float: left;
+	    display: block;
+	    margin: 0;
+	    width: auto;
+	    min-width: 30px;
+	    text-indent: 0;
+	    height: 30px;
+	    line-height: 30px;
+	    font-size: 15px;
+	    color: $primary-text-color;
+	    font-family: $primary-font-family;
+	    border-left: none;
+	    border-right: none;
+	    &:disabled
+	    {
+	    	background-color: transparent;
+	    	cursor: default;
+	    }
+	}
+	.table tbody > tr > td.cart_delete{
+	    padding: 0;
+	    width: 170px;
+	    vertical-align: top;
+	    padding-top: 20px;
+	    .btn
+	    {
+	    	width: 120px;
+	    	padding-left: 0;
+	    	padding-right: 0;
+	    }
+	    .remove
+	    {
+	    	text-transform: none;
+	    	font-size: 13px;
+	    	color: #81878f;
+	    	vertical-align: middle;
+	    	text-align: left;
+	    	&:hover
+	    	{
+	    		color: $primary-text-color;
+	    	}
+	    	i
+	    	{
+				font-size: 18px;
+				vertical-align: -3px;
+	    	}
+	    }
+	}
+	.table tfoot > tr > td {
+	    vertical-align: middle;
+	}
+	#cart_summary tbody td.cart_product {
+	    padding: 10px;
+	    width: 131px;
+	    text-align: center;
+	    vertical-align: middle;
+	}
+	#cart_summary tbody td.cart_product img {
+	    border: none;
+	    vertical-align: middle;
+	}
+	#cart_summary tbody td.cart_unit {
+	    text-align: center;
+	    vertical-align: top;
+	    padding-top: 20px;
+	    width: 120px;
+	    font-size: 14px;
+	    font-family: $secondary-font-family;
+	    .old-price
+	    {
+	    	text-decoration: line-through;
+	    	color: #a3a3a3;
+	    }
+	}
+	#cart_summary tbody td.cart_description small {
+	    display: block;
+	    padding: 0;
+	    color: #36383b;
+	    font-family: $primary-font-family;
+	    font-size: 13px;
+	    span
+	    {
+	    	color: #9198a1;
+	    }
+	}
+
+	#cart_summary tbody td.cart_description
+	{
+		vertical-align: top;
+	    text-align: left;
+	}
+	#cart_summary tfoot td.text-right {
+	    color: #333333;
+	    font-weight: bold;
+	}
+	#cart_summary tfoot td.price {
+	    text-align: right;
+	}
+	#cart_summary tfoot td.total_price_container span {
+	    color: #555454;
+	    font: 600 18px/22px "Open Sans",sans-serif;
+	    text-transform: uppercase;
+	}
+	#cart_summary tfoot td#total_price_container {
+	    background: none repeat scroll 0 0 white;
+	    color: #333333;
+	    font: 600 21px/25px "Open Sans",sans-serif;
+	}
+	.table > tbody > tr > td.cart_description {
+		padding: 20px;
+	}
+
+	tfoot.dd-list-empty tr td
+	{
+		border: none;
+	}
+
+	#cart_summary
+	{
+		margin-bottom: 0;
+	}
+
+	.info
+	{
+		border: 1px solid $primary-border-color;
+		margin-bottom: 0;
+		border-top: none;
+		font: 14px/50px $secondary-font-family;
+		color: black;
+		height: 50px;
+		vertical-align: middle;
+		font-weight: 600;
+		white-space: nowrap;
+		&.total
+		{
+			span
+			{
+				color: $primary-text-color;
+				& + span
+				{
+					color: $primary-link-hover-color;
+				}
+			}
+		}
+	}
+	
+	@media (max-width: 767px) {
+		.info
+		{
+			border-left: none;
+			border-right: none;
+		}
+		border-bottom: none;
+		#cart_summary table, #cart_summary thead,#cart_summary tbody,#cart_summary th,#cart_summary td,#cart_summary tr {
+		    display: block;
+		}
+		#cart_summary tbody td.cart_product
+		{
+			width: 100%;
+		}
+		#cart_summary thead tr {
+		    left: -9999px;
+		    position: absolute;
+		    top: -9999px;
+		}
+		#cart_summary tr {
+		    border-bottom: 1px solid #cccccc;
+		    overflow: hidden;
+		}
+		#cart_summary td {
+		    border: medium none;
+		    float: left;
+		    position: relative;
+		    white-space: normal;
+		    width: 100%;
+		    display: block;
+		    text-align: center;
+		}
+		#cart_summary td.cart_avail {
+		    clear: both;
+		}
+		#cart_summary td.cart_quantity {
+		    clear: both;
+		    text-align: center;
+		}
+		#cart_summary td.cart_delete {
+		    clear: both;
+		    float: right;
+		    width: 100%;
+		}
+		#cart_summary tbody td.cart_unit
+		{
+			width: 100%;
+		    max-width: 100%;
+		    .old-price
+		    {
+		    	display: block;
+		    }
+		}
+		#cart_summary td.cart_delete:before {
+		    display: inline-block;
+		    padding-right: 0.5em;
+		    position: relative;
+		    top: -3px;
+		}
+		#cart_summary td:before {
+		    content: attr(data-title);
+		    display: block;
+		}
+		#cart_summary tfoot td {
+		    float: none;
+		    width: 100%;
+		}
+		#cart_summary tfoot td:before {
+		    display: inline;
+		}
+		#cart_summary tfoot tr .text-right, #cart_summary tfoot tr .price {
+		    display: block;
+		    float: left;
+		    width: 100%;
+		}
+
+		.table {
+		    border-bottom: none;
+		}
+
+	}
+
+	.table > thead > tr > th {
+	    background: none repeat scroll 0 0 #ebebeb;
+	    border-bottom-width: 1px;
+	    border-color: #ebebeb;
+	    vertical-align: middle;
+	    color: $primary-text-color;
+	    font-size: 13px;
+	    font-family: $secondary-font-family;
+	    text-transform: uppercase;
+	    text-align: center;
+	    height: 46px;
+	    line-height: 46px;
+	    padding: 0;
+	    @include box-sizing(border-box);
+		
+	}
+	.product-name {
+	    color: $primary-text-color;
+	    font-size: 14px;
+	    font-weight: 600;
+	    line-height: 23px;
+	    margin-bottom: 0;
+	    height: 35px;
+	    margin-bottom: 15px;
+	}
+	.product-name a {
+	    color: $primary-text-color;
+	    line-height: 23px;
+	}
+	.product-name a:hover {
+	    color: $primary-link-hover-color;
+	}
+	.table .price, .subtotal p{
+	    color: #000;
+	    font-weight: 600;
+	    white-space: nowrap;
+	}
+
+}

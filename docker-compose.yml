@@ -1,0 +1,27 @@
+version: '3.4'
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    container_name: rabbitmq
+    hostname: my-rabbit
+  sql.data:
+    image: microsoft/mssql-server-linux:2017-latest
+    environment:
+      SA_PASSWORD: "Your_password123"
+      ACCEPT_EULA: "Y"
+  productapi:
+    image: ${DOCKER_REGISTRY}productapi
+    build:
+      context: .
+      dockerfile: Product.API/Dockerfile
+    depends_on:
+      - sql.data
+      - rabbitmq
+  testwebapi:
+    image: ${DOCKER_REGISTRY}testwebapi
+    build:
+      context: .
+      dockerfile: testWebApi/Dockerfile

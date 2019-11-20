@@ -1,0 +1,69 @@
+/*
+
+Template Name: Shop+
+Template Demo: http://shop.azelab.com
+Author: Azelab
+Author website: http://azelab.com
+Version: 1.0.0
+
+---------------
+
+Table of Contents:
+
+1) Typography
+2) Layout settings
+3) Header
+5) Header's top Right Side (My Account, Login, Whish List, Compare)
+6) Search, Logo, Cart
+7) Blocks
+8) Data-tables
+9) Reset default bootstrap style & overall buttons
+10) Footer
+11) Shortcodes
+12) Footer
+
+
+*/
+
+@charset "UTF-8";
+
+// ============================================================================
+// Imports
+// ============================================================================
+
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "compass/css3";
+@import "settings";
+
+@import "components/general";
+@import "components/helpers";
+@import "components/bootstrap";
+@import "components/layout";
+@import "components/header";
+@import "components/footer";
+@import "components/menus";
+@import "components/blocks";
+@import "components/review";
+@import "components/widgets";
+@import "components/mediaelementplayer";
+
+
+@import "pages/shortcodes";
+@import "pages/login_register";
+@import "pages/404";
+@import "pages/contact";
+@import "pages/wishlist";
+@import "pages/account";
+@import "pages/checkout";
+@import "pages/shopping_cart";
+@import "pages/order_complete";
+@import "pages/compare";
+@import "pages/blog";
+@import "pages/product";
+@import "pages/category";
+@import "pages/home_store";
+@import "pages/home_v2";
+@import "pages/home_v3_bookstore";
+@import "pages/home_v4_boxed";
+@import "pages/home_v5";

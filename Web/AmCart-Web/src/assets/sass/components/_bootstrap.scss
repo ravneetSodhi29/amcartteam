@@ -1,0 +1,153 @@
+
+/*===========================================================================*\
+|  Some fixes and enhancement
+\*===========================================================================*/ 
+
+a:hover, a:focus{color: inherit;}
+
+
+/*===========================================================================*\
+|  Bootstrap Modal Styles
+\*===========================================================================*/ 
+
+.modal-open{overflow: hidden;}
+
+.modal-backdrop{background-color: white;}
+.modal-header{padding: 0; background:$footer1-top-part-background-color; height:50px; line-height:50px; /*border-top:2px solid $primary-background-color;*/ vertical-align:middle; display:block; width:100%; border-bottom:1px solid $primary-border-color; overflow:hidden;}
+.modal-header h4{font-family:inherit; font-size:14px; color:$primary-text-color; margin:0; padding:0 0 0 20px; height:48px; line-height:48px; vertical-align:middle;}
+.modal-close{width:45px; height: 50px; line-height: 48px; text-align:center; position:absolute; right:0;}
+.modal-close:hover{background:$secondary-background-color;}
+.modal-close i{font-size:18px; vertical-align:middle; height:48px; line-height:48px; margin:0!important;}
+.modal-close:hover i{color:#fff;}
+.modal-content{border: 0; border-radius: 0;}
+.modal-body{padding: 0;}
+.modal-footer{padding: 0; margin: 0; border: 0;}
+.modal-body-info{padding: 30px; color: black; font-weight: 400;}
+
+@media (min-width: 768px){ .modal-md{width: 420px;} }
+
+
+/*===========================================================================*\
+|  Reset default bootstrap style & overall buttons
+\*===========================================================================*/ 
+
+.form-control{border:1px solid $primary-border-color; -webkit-border-radius:0!important; -moz-border-radius:0!important; border-radius:0!important; box-shadow:none; color:inherit; font-size:13px; height:37px; vertical-align:middle; padding:9px 15px; transition:border-color .15s ease-in-out 0 box-shadow .15s ease-in-out 0; -webkit-writing-mode:horizontal-tb; background:none;}
+.form-control:focus{border-color:$secondary-background-color; box-shadow:none; outline:0 none;}
+.form-control::-webkit-input-placeholder {color: #B2B7C9;}
+.form-control:-moz-placeholder {color: #B2B7C9;}
+.form-control::-moz-placeholder {color: #B2B7C9;}
+.form-control:-ms-input-placeholder {color: #B2B7C9;}
+label{display:inline-block; font-weight:300; margin:0 0 5px 5px;}
+.alert{border-radius:0; padding:10px 35px 10px 20px;}
+.alert-dismissable .close{top:1px;}
+.alert-data-icon{position:relative;}
+.alert-data-icon:before{position:absolute; font-size:18px; top:13px;}
+.alert-data-icon div{margin-left:35px;}
+blockquote{border-left:2px solid $secondary-background-color; font-size:14px; margin:0 0 20px; padding:15px 20px; font-style:italic;}
+.dropdown-menu{border-radius:0; border:0; border-top:2px solid $primary-background-color; min-width:320px; margin-top:15px;/* right:0; left:auto;*/ padding-top:0; height:auto!important; line-height:20px!important; font-size:13px;}
+.dropdown-menu.larger{width:420px; padding-bottom:0;}
+.btn{-webkit-border-radius:0; -moz-border-radius:0; border-radius:0; line-height:2; padding:8px 17px; text-transform:uppercase; border:none; transition:all .2s ease 0; font-weight:300;}
+.btn:focus, .btn:active,.btn:focus{box-shadow:none!important; outline:none!important;}
+.arrow-btn{color:$primary-text-color; border:none!important; background-color:transparent!important; text-align:left!important; padding:0!important; font-size:14px!important; position:relative;}
+.arrow-btn:after{position:absolute; color:$primary-text-color; content:"→"; display:inline-block; float:right; font-family:Arial; font-size:25px; line-height:32px; padding-right:30px; transition:all .2s ease 0; top:-4px; right:-60px;}
+.arrow-btn:hover{color:$secondary-background-color;}
+.arrow-btn:hover:after{right:-80px; color:$secondary-background-color;}
+.btn-w100{width:100%; font-size:14px!important;}
+.btn-lg{color:$secondary-background-color; min-width:215px; font-size:18px;}
+.btn-md{color:$secondary-background-color; min-width:155px; font-size:16px;}
+.btn-sm{color:$secondary-background-color; min-width:105px; font-size:12px; padding:6px 10px;}
+.btn-prim-col{border:1px solid $secondary-background-color; background:#fff;}
+.btn-prim-col:hover{border:1px solid $secondary-background-color; background:$secondary-background-color; color:#fff;}
+.btn-sec-col{background:$secondary-background-color; color:#fff;}
+.btn-sec-col:hover{background:$primary-background-color; color:$secondary-background-color;}
+.btn-third-col{background:$primary-background-color; color:$secondary-background-color;}
+#top-bar .btn-third-col:hover{background:$secondary-background-color; color:#fff;}
+.btn-yet-col{background:#fff; border:1px solid #ebedf0; color:$primary-text-color;}
+.btn-yet-col:hover{background:#ebedf0;}
+input[type="password"],input[type="search"],input[type="text"]{padding:0 35px 0 0; border:1px solid $primary-border-color; line-height:37px; height:37px; vertical-align:middle; text-indent:15px; font-size:13px; width:100%;}
+input[type=text]:focus,input[type=search]:focus,textarea:focus{border:1px solid $secondary-background-color;}
+
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }
+input:focus::-moz-placeholder { color:transparent; }
+input:focus:-ms-input-placeholder {color: #B2B7C9;}
+textarea:focus::-webkit-input-placeholder { color:transparent; }
+textarea:focus:-moz-placeholder { color:transparent; }
+textarea:focus::-moz-placeholder { color:transparent; }
+textarea:focus:-ms-input-placeholder {color: #B2B7C9;}
+
+
+/*===========================================================================*\
+|  Tabs && Accordions
+\*===========================================================================*/ 
+
+/* Tabs */
+
+.nav-tabs{border:0;}
+.nav-tabs > li{}
+.nav-tabs > li > a{line-height: 43px; padding: 0 25px; margin: 0; border-radius: 0; border: 1px solid #e1e3e6; border-right-width: 0; font-size: 14px;}
+.nav-tabs > li:last-child > a{border-right-width: 1px;}
+.nav-tabs > li > a:hover, .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{background-color: $secondary-background-color; color: white; border: 1px solid $secondary-background-color; border-right-width: 0;}
+.tab-content>.tab-pane{padding: 20px; border: 1px solid #e1e3e6;}
+.tab-content.tab-no-style>.tab-pane{padding: 0; border: 0;}
+
+/* Accordions */
+.accordion-group.panel{margin-bottom: 10px; box-shadow: none; -webkit-box-shadow:none;}
+.accordion-group.panel:first-child .accordion-header{color: #e1d3a9;}
+.accordion-header{display: block; line-height: 43px; padding: 0 0 0 20px; margin: 0; border-radius: 0; border: 1px solid #e1e3e6; font-size: 15px;}
+.accordion-header:hover{background-color: $secondary-background-color; color: white !important; border: 1px solid $secondary-background-color;}
+.accordion-header:after{content: "\4b"; display: block; float: right; width: 45px; border-left: 1px solid #e1e3e6; color: #bcc5d1; font-size: 20px; text-align: center; font-family: 'ElegantIcons';}
+.accordion-header:hover:after{border-color: $secondary-background-color; color: white;}
+.accordion-header.collapsed:after{content: "\4c";}
+.accordion-header.expand-icon-2:after{content: "\4b"; display: block; float: right; width: 23px; height: 23px; line-height: 20px; margin-right: 15px; margin-top: 11px; border: 1px solid #e1e3e6; border-radius: 50%; color: #bcc5d1; font-size: 18px; text-align: center; font-family: 'ElegantIcons';}
+.accordion-header.expand-icon-2:hover:after{border-color: $secondary-background-color; color: white;}
+.accordion-header.expand-icon-2.collapsed:after{content: "\4c";}
+
+.accordion-header i{display: inline-block; margin-right: 5px; margin-top: -4px; vertical-align: middle; font-size: 18px;}
+.accordion-body{padding: 20px; border: 1px solid #e1e3e6; border-top: 0;}
+
+
+
+/*===========================================================================*\
+|  Bootstrap Tooltips
+\*===========================================================================*/ 
+
+.tooltip{}
+.tooltip-inner{padding: 10px 15px; border-radius: 0; color: #dccc99; text-transform: uppercase;}
+
+
+/*===========================================================================*\
+|  Bootstrap Carousel
+\*===========================================================================*/ 
+
+.carousel{position: relative; padding-bottom: 40px;
+   &.no-bullets{padding-bottom: 0;}
+}
+.carousel-inner{}
+.carousel-control{
+   width: 35px; height: 35px; line-height: 35px; bottom: auto; top: 50%; margin-top: -17px; background-color: rgba(0,0,0,0.7); color: white;
+   font-size: 33px;
+}
+.carousel-indicators{
+   bottom: -10px;
+   li{width: 15px; height: 15px; margin: 0 1px; border-color: $primary-link-hover-color; border-radius: 50%;
+      &.active{width: 15px; height: 15px; margin: 0 1px; background-color: $primary-link-hover-color;}
+   }
+}
+
+/*===========================================================================*\
+|  Pagination
+\*===========================================================================*/ 
+
+.pagination{display: inline-block; margin: 0;
+   >li{
+      >a{
+         width: 25px; height: 25px; line-height: 24px; padding: 0; margin-right: 10px; border: 1px solid $primary-link-hover-color; color: $primary-text-color;
+         font-size: 15px; text-align: center;
+         
+      }
+      &.active a, a:hover, &.active a:hover{background-color: $primary-link-hover-color; color: white; border-color: $primary-link-hover-color;}
+      &:last-child a{margin-right: 0;}
+   }
+}

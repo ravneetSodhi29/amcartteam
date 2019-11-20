@@ -1,0 +1,80 @@
+
+/*===========================================================================*\
+|  Utilities
+\*===========================================================================*/ 
+
+.alignnone {margin:5px 20px 20px 0;}
+.aligncenter {display:block; margin:5px auto 5px auto;}
+.alignright {float:right; margin:5px 0 20px 10px;}
+.alignleft {float:left; margin:5px 20px 10px 0;}
+
+.list-inline{margin-left:0;}
+
+.text-center-md{
+   @media (max-width: $screen-sm-max){text-align: center;}
+}
+
+.bottom-line{border-bottom: 1px solid #e6e8eb;}
+
+/*===========================================================================*\
+|  Effects & Animations
+\*===========================================================================*/ 
+
+.img-fade-hover{opacity: 0.7; transition: opacity 0.5s ease;}
+.img-fade-hover:hover{opacity: 1;}
+
+.moving-hover-line{position: relative;
+   .hover-line{position: absolute; left: 0; bottom: 0; height: 2px; margin:0; padding: 0; background-color: #dccc99; transition: all 0.5s ease;}
+}
+
+.img-zoom-link{
+   display: inline-block; position: relative; max-width: 100%; vertical-align: bottom; overflow: hidden;
+   >img{transition: all 0.5s ease; transform-style: preserve-3d;}
+   >i{position: absolute; z-index: 1; width: 50px; height: 50px; top: -50px; left: 50%; margin-top: -25px; margin-left: -25px; font-size: 50px; color: white; text-shadow: 0 0 5px rgba(0,0,0,0.5); transition: all 0.5s ease;}
+   &:hover{ 
+      >img{
+         transform:scale(1.1);
+         -ms-transform:scale(1.1); /* IE 9 */
+         -moz-transform:scale(1.1); /* Firefox */
+         -webkit-transform:scale(1.1); /* Safari and Chrome */
+         -o-transform:scale(1.1); /* Opera */
+      }
+      >i{top: 50%;}
+   }
+}
+
+
+
+.spin{display: inline-block; animation: spin 4s infinite linear; -webkit-animation: spin 4s infinite linear; -moz-animation: spin 4s infinite linear; -ms-animation: spin 4s infinite linear;}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+.spin-cc{display: inline-block; animation: spin-cc 4s infinite linear; -webkit-animation: spin-cc 4s infinite linear; -moz-animation: spin-cc 4s infinite linear; -ms-animation: spin-cc 4s infinite linear;}
+@-moz-keyframes spin-cc {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(-360deg); }
+}
+@-webkit-keyframes spin-cc {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(-360deg); }
+}
+@keyframes spin-cc {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(-360deg);}
+}
+
+/*===========================================================================*\
+|  Fixes
+\*===========================================================================*/ 
+
+.vertical-bx-1{padding-left: 0; list-style-type: none;}

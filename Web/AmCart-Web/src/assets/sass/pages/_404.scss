@@ -1,0 +1,117 @@
+
+/*===========================================================================*\
+|  404
+\*===========================================================================*/ 
+
+
+.page-404
+{
+	text-align: center;
+	max-width: 570px;
+	margin: 0 auto;
+	padding-top: 95px;
+	h1
+	{
+		font: 600 180px/150px $secondary-font-family;
+		margin: 0;
+		@media all and (max-width: 768px) {
+			font-size: 160px;
+			line-height: 170px;
+			overflow: hidden;
+		}
+	}
+
+	h5
+	{
+		font-family: $primary-font-family;
+		margin: 0 0 30px 0;
+	}
+
+	p
+	{
+		font-size: 14px;
+		margin-bottom: 25px;
+		a
+		{
+			color: $primary-link-hover-color;
+			&:hover
+			{
+				color: $primary-link-color
+			}
+		}
+	}
+}
+
+.search input,input[type=submit]
+{
+	height: 46px;
+	line-height: 46px;
+	vertical-align: middle;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.search
+{
+	.field-icon
+	{
+		display: inline-block;
+		width: auto;
+		height: auto;
+		position: absolute;
+		top: 50%;
+		right: 35px;
+		@include translateY(-50%);
+	}
+}
+.page-404 .btn, .subscribe .btn
+{
+	width: 100%;
+}
+
+.best-product
+{
+	border-top: 2px solid $primary-text-color;
+	text-align: center;
+	margin-top: 100px;
+	h6
+	{
+		text-align: center;
+		padding: 0px 20px;
+		display: inline-block;
+		@include translateY(-50%);
+		margin: 0;
+		background-color: #fff;
+		margin-bottom: 20px;
+	}
+}
+
+.pl-pages
+{
+	max-width: 100%;
+	overflow: hidden;
+}
+.subscribe
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	line-height: 50px;
+	h3
+	{
+		margin: 0;
+		line-height: 55px;
+		text-align: center;
+		span
+		{
+			color: #8a9099;
+			margin-right: 15px;
+			font-size: 1.2em;
+			vertical-align: -4px;
+		}
+	}
+	form
+	{
+		vertical-align: middle;
+		line-height: 50px;
+	}
+
+}

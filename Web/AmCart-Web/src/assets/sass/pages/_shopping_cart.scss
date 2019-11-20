@@ -1,0 +1,113 @@
+
+/*===========================================================================*\
+|  Shopping Cart
+\*===========================================================================*/ 
+
+h6.gold-header
+{
+	background-color: $secondary-background-color;
+	padding: 2px 0 0 15px;
+	margin: 0;
+	color: white;
+	vertical-align: middle;
+	font: 16px/46px $secondary-font-family;
+	height: 46px;
+}
+
+.cart-detail
+{
+	margin-bottom: 40px;
+}
+
+.info
+{
+	height: 55px;
+	font: 13px/55px $primary-font-family;
+	color: black;
+	border-left: 1px solid $primary-border-color;
+	border-right: 1px solid $primary-border-color;
+	border-bottom: 1px solid $primary-border-color;
+	margin-top: 0;
+	margin-bottom: 0;
+	span+span
+	{
+		font-size: 15px;
+	}
+	&.total
+	{
+		font: 600 15px/60px $primary-font-family;
+		text-transform: uppercase;
+		height: 60px;
+		span
+		{
+			vertical-align: middle;
+		}
+		span+span
+		{
+			color: $primary-link-hover-color;
+			font-size: 18px;
+		}
+	}
+	.gray
+	{
+		color: #9198a1;
+		font-size: 13px;
+	}
+}
+
+.calc-shipping
+{
+	padding-top: 15px;
+	border: 1px solid $primary-border-color;
+	margin-bottom: 40px;
+	overflow: hidden;
+}
+
+.bottom-buttons
+{
+	input[type=text]
+	{
+		height: 46px;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.btn
+	{
+		display: inline-block;
+		height: 46px;
+		text-align: center;
+		width: 100%;
+		font-size: 14px;
+		min-width: 0;
+		margin-bottom: 20px;
+	}
+}
+
+.mb-40
+{
+	margin-bottom: 40px !important;
+}
+
+#order-detail-content
+{
+	span.count
+	{
+		color: $primary-text-color;
+		font: 16px $primary-font-family;
+	}
+
+	.subtotal
+	{
+		p
+		{
+			text-align: center;
+		}
+		.close-btn + p
+		{
+			text-align: left;
+			@media all and (max-width: $screen-xs-max) {
+				text-align: center;
+			}
+		}
+	}
+}

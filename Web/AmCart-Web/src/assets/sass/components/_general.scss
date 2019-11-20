@@ -1,0 +1,30 @@
+
+/*===========================================================================*\
+|  Scaffolding
+\*===========================================================================*/ 
+
+body{padding:0; margin:0; font-family: $primary-font-family; font-weight: 300; font-size:13px; background:#fff; color:#9198a1; line-height:1.7;}
+i{font-family:inherit; -moz-osx-font-smoothing:grayscale; -webkit-font-smoothing:antialiased;}
+img{max-width: 100%;}
+
+/*===========================================================================*\
+|  Typography
+\*===========================================================================*/ 
+
+h1,h2,h3,h4,h5,h6{font-family: $secondary-font-family; font-weight:300; margin-top:20px; color:$primary-text-color;}
+h1,h2{line-height:28px;}
+h3,h4{line-height:24px;}
+h5,h6{line-height:20px;}
+h1{font-size:28px;}
+h2{font-size:26px;}
+h3{font-size:24px;}
+h4{font-size:22px;}
+h5{font-size:20px;}
+h6{font-size:18px;}
+a{color:$primary-link-color; transition:.2s; -moz-transition:.2s; -webkit-transition:.2s; -o-transition:.2s; outline:none!important; cursor:pointer;}
+a:hover{color:$primary-link-hover-color; text-decoration:none; transition:.2s; -moz-transition:.2s; -webkit-transition:.2s; -o-transition:.2s;}
+a:focus{text-decoration:none;}
+input:focus,a:focus,:focus{outline:none;}
+input[disabled]{background:#f0f0f1;}
+.huge-title{font-size:38px; font-weight:300;}
+h3 .underline{width:100%; height:2px; border-left:solid 100px #02b8fa; clear:both; display:block; margin-top:8px;}
