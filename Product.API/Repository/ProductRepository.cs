@@ -39,9 +39,10 @@ namespace ProductsAPI.Repository
             return await _dbContext.Products.LongCountAsync();
         }
 
-        public IEnumerable<Product> GetProducts()
+        public string GetProducts()
         {
-            return _dbContext.Products.ToList();
+            //return _dbContext.Products.ToList();
+            return "Hello World!";
         }
         
         public void InsertProduct(Product product)

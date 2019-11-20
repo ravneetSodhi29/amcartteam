@@ -4,7 +4,7 @@ using Microsoft.Extensions.Configuration;
 using ProductsAPI.DbContexts;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore;
-using ECom.WebHost.Customization;
+//using ECom.WebHost.Customization;
 
 namespace ProductsAPI
 {
@@ -20,16 +20,16 @@ namespace ProductsAPI
             var host = BuildWebHost(configuration, args);
             //Log.Information("Applying migrations ({ApplicationContext})...", AppName);
 
-            host.MigrateDbContext<ProductContext>((context, services) =>
-            {
-                var env = services.GetService<IHostingEnvironment>();
+            //host.MigrateDbContext<ProductContext>((context, services) =>
+            //{
+            //    var env = services.GetService<IHostingEnvironment>();
                 // var settings = services.GetService<IOptions<CatalogSettings>>();
                 // var logger = services.GetService<ILogger<CatalogContextSeed>>();
 
                 // new CatalogContextSeed()
                 //     .SeedAsync(context, env, settings, logger)
                 //     .Wait();
-            });
+            //});
            // .MigrateDbContext<IntegrationEventLogContext>((_, __) => { });
 
            // Log.Information("Starting web host ({ApplicationContext})...", AppName);

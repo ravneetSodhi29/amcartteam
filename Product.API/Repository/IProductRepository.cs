@@ -13,7 +13,8 @@ namespace ProductsAPI.Repository
         Task<List<Product>> GetAsyncProductsItemsForPage(int pageSize, int pageIndex);
         Task<long> GetAsyncProductCount();
         Product GetProductByID(int productId);
-        IEnumerable<Product> GetProducts();
+
+       string GetProducts();
         void InsertProduct(Product product);
         void Save();
         void UpdateProduct(Product product);
